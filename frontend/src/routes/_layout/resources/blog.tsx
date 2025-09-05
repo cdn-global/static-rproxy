@@ -74,11 +74,6 @@ function BlogPage() {
 
   return (
     <>
-      <Box width="100%" textAlign="center" py={4}>
-        <a href="https://www.dpbolvw.net/click-101487435-17085984" target="_top">
-          <img src="https://www.tqlkg.com/image-101487435-17085984" width="510" height="210" alt="" border="0"/>
-        </a>
-      </Box>
       <Box py={16} bg="red.50" color="gray.800">
         <Box maxW="1200px" mx="auto" px={4}>
           <Heading as="h1" size="2xl" textAlign="center" mb={6} fontWeight="medium">Guides and Trends</Heading>
