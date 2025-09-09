@@ -43,9 +43,6 @@ const Footer = () => {
               <Link href="https://twitter.com/cobaltdata" isExternal aria-label="Twitter">
                 <Box as="span" color="gray.300" _hover={{ color: "red.600" }}>Twitter</Box>
               </Link>
-              <Link href="https://linkedin.com/company/cobaltdata" isExternal aria-label="LinkedIn">
-                <Box as="span" color="gray.300" _hover={{ color: "red.600" }}>LinkedIn</Box>
-              </Link>
               <Link href="https://github.com/cobaltdatanet" isExternal aria-label="GitHub">
                 <Box as="span" color="gray.300" _hover={{ color: "red.600" }}>GitHub</Box>
               </Link>
