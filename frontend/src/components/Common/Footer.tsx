@@ -51,7 +51,7 @@ const Footer = () => {
               </Link>
             </Flex>
             <Text color="gray.300" mb={4} pt={4}>
-              <strong>Address:</strong> 99 Wall St Suite 5660, New York, NY 10005, USA
+              <strong>Address:</strong> 8 The Green, Dover, Kent County, DE 19901 US
             </Text>
           </Box>
 

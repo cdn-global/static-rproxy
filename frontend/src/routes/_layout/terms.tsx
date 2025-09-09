@@ -238,7 +238,7 @@ function TermsPage() {
             </Text>
             <VStack align="start" spacing={2} pl={4}>
               <Text><strong>Email:</strong> support@roamingproxy.com</Text>
-              <Text><strong>Address:</strong> 99 Wall St Suite 5660, New York, NY 10005, USA</Text>
+              <Text><strong>Address:</strong> 8 The Green, Dover, Kent County, DE 19901 US</Text>
               <Text><strong>Phone:</strong> +1 ‪(833) 435-3873‬</Text>
               <Text><strong>Support Hours:</strong> Monday to Friday, 9:00 AM to 5:00 PM EST</Text>
             </VStack>
