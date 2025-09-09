@@ -83,7 +83,7 @@ const Footer = () => {
               <Link href="/network/proxy-types" color="gray.300" _hover={{ color: "red.600" }}>Proxy Types</Link>
               <Link href="/resources/faq" color="gray.300" _hover={{ color: "red.600" }}>FAQ</Link>
               <Link href="/resources/support-center" color="gray.300" _hover={{ color: "red.600" }}>Help & Support</Link>
-              <Link href="https://apis.roamingproxy.com/redoc" color="gray.300" _hover={{ color: "red.600" }}>API Reference</Link>
+              <Link href="https://docs.roamingproxy.com" color="gray.300" _hover={{ color: "red.600" }}>Community Resources </Link>
             </VStack>
           </Box>
 
