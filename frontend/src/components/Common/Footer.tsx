@@ -19,7 +19,7 @@ const Footer = () => {
           <Box>
             <Heading as="h4" size="md" mb={1} color="white">
               <Link href="https://roamingproxy.com" _hover={{ textDecoration: "none", color: "red.600" }}>
-                Roaming Proxy
+                ROAMINGPROXY.com
               </Link>
             </Heading>
             <Text color="gray.400" fontSize="sm" mb={2}>
@@ -160,7 +160,7 @@ const Footer = () => {
         {/* Bottom Footer - Copyright and Legal */}
         <Flex justify="space-between" align="center" borderTop="1px solid" borderColor="gray.700" pt={6} flexWrap="wrap" gap={4}>
           <Text color="gray.400" fontSize="sm">
-            © 2025 <Link href="https://roamingproxy.com" color="gray.200" _hover={{ color: "red.400" }}>Roaming Proxy</Link>,{" "}
+            © 2025 <Link href="https://roamingproxy.com" color="gray.200" _hover={{ color: "red.400" }}>ROAMINGPROXY.com</Link>,{" "}
             <Link href="https://tradevaultllc.com" color="gray.200" _hover={{ color: "blue.400" }}>Trade Vault LLC</Link>. All rights reserved.
           </Text>
           <Flex gap={6}>
