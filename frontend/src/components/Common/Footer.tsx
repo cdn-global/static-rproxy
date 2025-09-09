@@ -24,7 +24,7 @@ const Footer = () => {
             </Heading>
             <Text color="gray.400" fontSize="sm" mb={2}>
               <Link href="https://cobaltdata.net" _hover={{ textDecoration: "none", color: "blue.400" }}>
-                Cobalt Data Network
+                COBALTDATA.net
               </Link>
             </Text>
             <Text color="gray.300" mb={4}>
@@ -99,7 +99,7 @@ const Footer = () => {
               <Link href="https://cloud.roamingproxy.com/login" color="gray.300" _hover={{ color: "red.600" }}>Log In</Link>
               <Link href="https://cloud.roamingproxy.com/signup" color="gray.300" _hover={{ color: "red.600" }}>Sign Up</Link>
               <Link href="/contact" color="gray.300" _hover={{ color: "red.600" }}>Contact</Link>
-              <Link href="https://cobaltdata.net" color="gray.300" _hover={{ color: "red.400" }}>Cobalt Data Network</Link>
+              <Link href="https://cobaltdata.net" color="gray.300" _hover={{ color: "red.400" }}>COBALTDATA.net</Link>
             </VStack>
           </Box>
         </Grid>
@@ -161,7 +161,7 @@ const Footer = () => {
         <Flex justify="space-between" align="center" borderTop="1px solid" borderColor="gray.700" pt={6} flexWrap="wrap" gap={4}>
           <Text color="gray.400" fontSize="sm">
             © 2025 <Link href="https://roamingproxy.com" color="gray.200" _hover={{ color: "red.400" }}>Roaming Proxy</Link>,{" "}
-            <Link href="https://cobaltdata.net" color="gray.200" _hover={{ color: "blue.400" }}>Cobalt Data Network</Link>. All rights reserved.
+            <Link href="https://tradevaultllc.com" color="gray.200" _hover={{ color: "blue.400" }}>Trade Vault LLC</Link>. All rights reserved.
           </Text>
           <Flex gap={6}>
             <Link href="/privacy" color="gray.400" fontSize="sm" _hover={{ color: "red.600" }}>Privacy Policy</Link>
