@@ -65,6 +65,16 @@ function Layout() {
             padding: "16px",
             fontSize: "14px",
             zIndex: 9999,
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+          contentStyle={{
+            flex: "0 1 auto",
+            margin: "0 16px",
+          }}
+          buttonWrapperStyle={{
+            margin: "0",
           }}
           buttonStyle={{
             background: theme.colors.red[500] || "#EF4444",

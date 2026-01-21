@@ -93,8 +93,8 @@ const Footer = () => {
             <VStack align="flex-start" spacing={2}>
               <Link href="/pricing" color="gray.300" _hover={{ color: "red.600" }}>Pricing</Link>
               <Link href="/contact-sales" color="gray.300" _hover={{ color: "red.600" }}>Sales</Link>
-              <Link href="https://cloud.roamingproxy.com/login" color="gray.300" _hover={{ color: "red.600" }}>Log In</Link>
-              <Link href="https://cloud.roamingproxy.com/signup" color="gray.300" _hover={{ color: "red.600" }}>Sign Up</Link>
+              <Link href="https://console.roamingproxy.com/login" color="gray.300" _hover={{ color: "red.600" }}>Log In</Link>
+              <Link href="https://console.roamingproxy.com/signup" color="gray.300" _hover={{ color: "red.600" }}>Sign Up</Link>
               <Link href="/contact" color="gray.300" _hover={{ color: "red.600" }}>Contact</Link>
               <Link href="https://cobaltdata.net" color="gray.300" _hover={{ color: "red.400" }}>COBALTDATA.net</Link>
             </VStack>

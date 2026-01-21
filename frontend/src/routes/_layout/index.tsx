@@ -15,7 +15,7 @@ function LandingPage() {
         title="Seamless Global Web Access with Roaming Proxy"
         subtitle="Unlock the web with our HTTPS proxy network, optimized for web scraping, data collection, and AI-driven insights."
         ctas={[
-          { text: "Get Started", link: "https://cloud.roamingproxy.com" },
+          { text: "Get Started", link: "https://console.roamingproxy.com" },
           { text: "Request Demo", link: "/demo-request" },
         ]}
         bgImage="https://images.unsplash.com/photo-1625685554528-2a0b517e094c"
@@ -224,7 +224,7 @@ function LandingPage() {
               color="blue.600"
               _hover={{ bg: "gray.200" }}
               as="a"
-              href="https://cloud.roamingproxy.com"
+              href="https://console.roamingproxy.com"
             >
               Get Started Now
             </Button>

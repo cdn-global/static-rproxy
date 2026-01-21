@@ -289,7 +289,7 @@ function NetworkStatusPage() {
               <Text color="gray.600">
                 View live proxy performance and uptime stats on our dedicated health page.
               </Text>
-              <Link color="red.600" href="https://cloud.roamingproxy.com/scraping-tools/search-proxies" fontWeight="medium">
+              <Link color="red.600" href="https://console.roamingproxy.com/scraping-tools/search-proxies" fontWeight="medium">
                 Check Dashboard →
               </Link>
             </VStack>
