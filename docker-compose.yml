@@ -142,7 +142,7 @@ services:
       - traefik.enable=true
       - traefik.docker.network=traefik-public
       - traefik.constraint-label=traefik-public
-      - traefik.http.routers.dashboard.rule=Host(`roamingproxy.com`) || Host(`www.roamingproxy.com`)
+      - traefik.http.routers.dashboard.rule=Host(`roamingproxy.com`) || Host(`www.roamingproxy.com`) || Host(`18.220.217.199`)
       - traefik.http.routers.dashboard.entrypoints=http
       - traefik.http.services.dashboard.loadbalancer.server.port=80
 
