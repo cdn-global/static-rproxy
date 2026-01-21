@@ -1,8 +1,6 @@
-version: "3.8"
-
 services:
   traefik:
-    image: traefik:v3.2
+    image: traefik:latest
     restart: always
     ports:
       # Optionally, if you plan to support HTTPS in the future, you can uncomment the following:
