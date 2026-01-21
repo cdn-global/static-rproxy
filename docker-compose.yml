@@ -132,6 +132,8 @@ services:
       - .env
     build:
       context: ./frontend
+    ports:
+      - "3000:80"
     environment:
       - NGINX_PROXY_BUFFER_SIZE=128k
       - NGINX_PROXY_BUFFERS=4 256k
