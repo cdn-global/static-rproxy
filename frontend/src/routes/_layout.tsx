@@ -14,12 +14,12 @@ function Layout() {
   const [consentGiven, setConsentGiven] = useState(
     document.cookie.includes("roamingproxy-consent=true")
   );
-  const [gtagLoaded, setGtagLoaded] = useState(!!window.gtag);
+  const [gtagLoaded, setGtagLoaded] = useState(typeof window.gtag !== 'undefined');
 
   useEffect(() => {
-    if (!window.gtag) {
+    if (typeof window.gtag === 'undefined') {
       const checkGtag = () => {
-        if (window.gtag) {
+        if (typeof window.gtag !== 'undefined') {
           setGtagLoaded(true);
           clearInterval(interval);
         }
@@ -83,7 +83,7 @@ function Layout() {
           expires={150}
           onAccept={() => {
             console.log("Accept clicked");
-            if (gtagLoaded && window.gtag) {
+            if (gtagLoaded && typeof window.gtag !== 'undefined') {
               window.gtag("consent", "update", {
                 ad_user_data: "granted",
                 ad_personalization: "granted",
@@ -105,7 +105,7 @@ function Layout() {
           }}
           onDecline={() => {
             console.log("Cookies declined");
-            if (gtagLoaded && window.gtag) {
+            if (gtagLoaded && typeof window.gtag !== 'undefined') {
               window.gtag("consent", "update", {
                 ad_user_data: "denied",
                 ad_personalization: "denied",

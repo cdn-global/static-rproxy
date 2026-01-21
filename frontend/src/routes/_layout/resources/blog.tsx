@@ -9,12 +9,25 @@ export const Route = createFileRoute("/_layout/resources/blog")({
   component: BlogPage,
 });
 
+interface BlogPost {
+  id: number;
+  title: string;
+  category: string;
+  date: string;
+  readTime: string;
+  tags: string[];
+  image: string;
+  path: string;
+  excerpt?: string;
+  content?: string;
+}
+
 function BlogPage() {
-  const [posts, setPosts] = useState([]);
+  const [posts, setPosts] = useState<BlogPost[]>([]);
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
-  const [selectedCategory, setSelectedCategory] = useState(null);
-  const [selectedTags, setSelectedTags] = useState([]);
+  const [error, setError] = useState<string | null>(null);
+  const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
+  const [selectedTags, setSelectedTags] = useState<string[]>([]);
 
   useEffect(() => {
     const fetchPosts = async () => {
@@ -34,11 +47,11 @@ function BlogPage() {
     fetchPosts();
   }, []);
 
-  const handleCategoryClick = (categoryName) => {
+  const handleCategoryClick = (categoryName: string) => {
     setSelectedCategory(categoryName === selectedCategory ? null : categoryName);
   };
 
-  const handleTagClick = (tagName) => {
+  const handleTagClick = (tagName: string) => {
     setSelectedTags(prev => 
       prev.includes(tagName) ? prev.filter(t => t !== tagName) : [...prev, tagName]
     );

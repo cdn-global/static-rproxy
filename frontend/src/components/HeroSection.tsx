@@ -1,7 +1,19 @@
 import { Box, Flex, Heading, Text, Button, VStack } from "@chakra-ui/react";
 import PropTypes from 'prop-types';
 
-function HeroSection({ title, subtitle, ctas = [], bgImage = '' }) {
+interface CTA {
+  text: string;
+  link: string;
+}
+
+interface HeroSectionProps {
+  title: string;
+  subtitle: string;
+  ctas?: CTA[];
+  bgImage?: string;
+}
+
+function HeroSection({ title, subtitle, ctas = [], bgImage = '' }: HeroSectionProps) {
   return (
     <Box
       bgGradient="linear(to-bl, red.900, red.400)"

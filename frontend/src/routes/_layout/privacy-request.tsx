@@ -44,27 +44,27 @@ function PrivacyRequestPage() {
   const [verificationMethod, setVerificationMethod] = useState('email');
   const toast = useToast();
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
     
     try {
-      const formData = {
-        full_name: e.target.fullName.value,
-        email: e.target.email.value,
-        phone_number: e.target.phoneNumber.value || null,
-        account_id: e.target.accountId.value || null,
+      const formData: any = {
+        full_name: (e.target as any).fullName.value,
+        email: (e.target as any).email.value,
+        phone_number: (e.target as any).phoneNumber.value || null,
+        account_id: (e.target as any).accountId.value || null,
         request_type: requestType,
         verification_method: verificationMethod,
-        additional_details: e.target.additionalDetails?.value || null
+        additional_details: (e.target as any).additionalDetails?.value || null
       };
       
       // Add request-type specific fields
       if (requestType === 'rectification') {
-        formData.correction_details = e.target.correctionDetails.value;
+        formData.correction_details = (e.target as any).correctionDetails.value;
       } else if (requestType === 'erasure') {
         formData.deletion_reason = deletionReason;
-        formData.deletion_details = e.target.deletionDetails?.value || null;
+        formData.deletion_details = (e.target as any).deletionDetails?.value || null;
       }
       
       console.log("Form data being submitted:", formData);

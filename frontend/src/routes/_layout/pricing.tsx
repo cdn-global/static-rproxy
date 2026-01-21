@@ -191,7 +191,7 @@ function PricingPage() {
           </Text>
           <Box maxW="300px" mx="auto" mb={10}>
             <FormControl display="flex" alignItems="center" justifyContent="center">
-              <FormLabel htmlFor="billing-toggle" mb="0" mravag={2}>
+              <FormLabel htmlFor="billing-toggle" mb="0" mr={2}>
                 Month-to-Month
               </FormLabel>
               <Switch

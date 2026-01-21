@@ -4,10 +4,23 @@ import { createFileRoute, useParams, Link as RouterLink } from "@tanstack/react-
 import { TimeIcon } from "@chakra-ui/icons";
 import Footer from "../../../../components/Common/Footer";
 
+interface BlogPost {
+  id: number;
+  title: string;
+  category: string;
+  date: string;
+  readTime: string;
+  tags: string[];
+  image: string;
+  path: string;
+  excerpt?: string;
+  content?: string;
+}
+
 function BlogPostDetails() {
-  const [posts, setPosts] = useState([]);
+  const [posts, setPosts] = useState<BlogPost[]>([]);
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
+  const [error, setError] = useState<string | null>(null);
   
   // Extract the 'path' parameter from the URL
   const { path } = useParams({ from: "/_layout/resources/blogs/$path" });
@@ -36,13 +49,13 @@ function BlogPostDetails() {
   }, []);
 
   // Parse the post content into JSX elements
-  const parseContent = (content) => {
+  const parseContent = (content: string): JSX.Element[] => {
     if (!content || typeof content !== 'string') {
       return [<Text key="no-content" fontSize="lg" color="gray.700" mb={4}>No content available</Text>];
     }
 
     const paragraphs = content.split('<br>');
-    const elements = [];
+    const elements: JSX.Element[] = [];
     paragraphs.forEach((paragraph, index) => {
       if (!paragraph.trim()) return;
 
@@ -92,10 +105,10 @@ function BlogPostDetails() {
   };
 
   // Format text with bold and italic styles
-  const formatText = (text) => {
-    if (!text) return '';
+  const formatText = (text: string): (string | JSX.Element)[] => {
+    if (!text) return [''];
   
-    const parts = [];
+    const parts: (string | JSX.Element)[] = [];
     let remainingText = text;
     let currentIndex = 0;
   
